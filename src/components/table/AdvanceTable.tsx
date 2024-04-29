@@ -1,3 +1,5 @@
+'use client'
+
 import React from "react";
 import TableWithStripedRows from "./Table";
 import TableWithSearchButton from "./Table";

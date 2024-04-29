@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 // import "./globals.css";
-import '@/style/main.scss'
+import "@/style/main.scss";
+import Link from "next/link";
+import Navbar from "@/components/Navbar";
+import SidebarWithContentSeparator from "@/components/Sidebar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +20,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} grid-cols-3`}>
+       <div>
+       
+        <SidebarWithContentSeparator/>
+       </div>
+
+        <div className="col-span-4">
+          <h1>Navbar 3</h1>
+          {children}
+          </div>
+      </body>
     </html>
   );
 }

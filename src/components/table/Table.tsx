@@ -1,60 +1,4 @@
 
-// import React, { useState } from "react";
-// import { TABLE_HEAD, TableData60 } from "../data/data";
-
-// const TableWithStripedRows: React.FC = () => {
-//   const [currentPage, setCurrentPage] = useState<number>(1);
-//   const rowsPerPage: number = 5;
-
-  
-//   const indexOfLastRow: number = currentPage * rowsPerPage;
-//   const indexOfFirstRow: number = indexOfLastRow - rowsPerPage;
-
-
-//   const currentRows = TableData60.slice(indexOfFirstRow, indexOfLastRow);
-
-  
-//   const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
-
-//   return (
-//     <div className="table h-full w-full overflow-scroll">
-//       <table className="table">
-//         <thead className="table-head">
-//           <tr>
-//             {TABLE_HEAD?.map((head, index) => (
-//               <th key={index}>{head}</th>
-//             ))}
-//           </tr>
-//         </thead>
-//         <tbody className="table-rows">
-//           {currentRows.map(({ Id, name, phone_number, age, company }, index) => (
-//             <tr key={name}>
-//               <td>{Id}</td>
-//               <td>{name}</td>
-//               <td>+88{phone_number}</td>
-//               <td>{age}</td>
-//               <td>{company}</td>
-//             </tr>
-//           ))}
-//         </tbody>
-//       </table>
-
-//       {/* Pagination */}
-
-//       <ul className="pagination">
-//         {Array.from({ length: Math.ceil(TableData60.length / rowsPerPage) }, (_, i) => (
-
-//           <li key={i} className={`page-item ${currentPage === i + 1 ? 'active' : ''}`}>
-//             <button className="page-link" onClick={() => paginate(i + 1)}>{i + 1}</button>
-//           </li>
-
-//         ))}
-//       </ul>
-//     </div>
-//   );
-// };
-
-// export default TableWithStripedRows;
 
 import React, { useState } from "react";
 import { TABLE_HEAD, TableData60 } from "../data/data";
@@ -81,14 +25,13 @@ const TableWithStripedRows: React.FC = () => {
         company.toLowerCase().includes(searchQuery.toLowerCase())
     );
     setSearchResults(filteredResults);
-    setCurrentPage(1); // Reset to first page after search
+    setCurrentPage(1); 
   };
 
-  // Calculate index of the first and last row of the current page
   const indexOfLastRow: number = currentPage * rowsPerPage;
   const indexOfFirstRow: number = indexOfLastRow - rowsPerPage;
 
-  // Determine which set of rows to display (search results if available, otherwise current page)
+ 
   const currentRows = searchResults.length > 0 ? searchResults.slice(indexOfFirstRow, indexOfLastRow) : TableData60.slice(indexOfFirstRow, indexOfLastRow);
 
   // Function to handle pagination
