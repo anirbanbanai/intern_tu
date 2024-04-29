@@ -6,6 +6,11 @@
 
 $bgcolor: #ecf0f1;
 
+// * {
+//   background-color: $bgcolor;
+//   margin: 2px;
+// }
+
 .text-red{
   color: red;
 }
@@ -13,33 +18,16 @@ $bgcolor: #ecf0f1;
   color: green;
 }
 
-* {
-  background-color: $bgcolor;
+.icon{
+  width: 20px;
+  height: 20px;
 }
 
-.tabs-header {
-  display: flex;
-  border-bottom: 1px solid #e5e7eb;
+.grid-cols-3{
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
-.tab {
-  padding: 12px 20px;
-  cursor: pointer;
-  color: #4b5563;
-  border-bottom: 2px solid transparent;
-  transition: border-color 0.3s ease;
-
-  &:hover {
-    border-color: #2563eb;
-  }
-
-  &.active {
-    color: #2563eb;
-    border-color: #2563eb;
-  }
+.col-span-1 {
+  grid-column: span 1;
 }
-
-.tabs-body {
-  padding: 20px;
-}
-

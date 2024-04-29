@@ -2,10 +2,18 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { FaArrowCircleRight } from "react-icons/fa";
 const SecondValidation = () => {
-  
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = (data: any) => console.log(data);
   return (
     <div>
-   
+      <form
+        className="input-groupBasic basic-element  "
+        onSubmit={handleSubmit(onSubmit)}
+      >
         <div className="">
           <div className="flex">
             <label htmlFor="ftext">FirstName</label>
@@ -13,7 +21,10 @@ const SecondValidation = () => {
               className="input"
               id="fname"
               placeholder="Some text value"
-              
+              {...register("firstname", {
+                required: true,
+                maxLength: 30,
+              })}
             />
           </div>
 
@@ -23,7 +34,10 @@ const SecondValidation = () => {
               className="input"
               id="lname"
               type="text"
-             
+              {...register("lastname", {
+                required: true,
+                maxLength: 30,
+              })}
             />
           </div>
 
@@ -32,7 +46,7 @@ const SecondValidation = () => {
             <input
               className="input"
               id="username"
-              
+              {...register("username", { required: true, maxLength: 30 })}
             />
           </div>
 
@@ -42,7 +56,7 @@ const SecondValidation = () => {
               className="input"
               id="Date"
               type="text"
-              
+              {...register("city", { required: true, maxLength: 30 })}
             />
           </div>
 
@@ -51,12 +65,17 @@ const SecondValidation = () => {
             <input
               className="input"
               id="ss"
-             
+              {...register("state", { required: true, maxLength: 30 })}
             />
           </div>
         </div>
 
-       
+        {errors.name && errors.name.type === "required" && (
+          <span className="text-red">This is required</span>
+        )}
+        {errors.name && errors.name.type === "maxLength" && (
+          <span className="text-green">Max length exceeded</span>
+        )}
 
         <button typeof="submit" className="cssbuttons-io-button">
           Submit
@@ -64,7 +83,7 @@ const SecondValidation = () => {
             <FaArrowCircleRight />
           </div>
         </button>
-     
+      </form>
     </div>
   );
 };

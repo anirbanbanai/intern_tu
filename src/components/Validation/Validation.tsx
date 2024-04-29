@@ -12,7 +12,7 @@ const Validation = () => {
   const onSubmit= (data: any) => console.log(data);
   return (
     <div>
-      <h2>Validation</h2>
+      <h2 className="validation-text">Validation</h2>
       <div className="flexvalidate">
         <div>
           <h3>Bootstrap validation normal</h3>

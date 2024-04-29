@@ -19,7 +19,7 @@
   &-rows {
     tr {
       &:nth-child(even) {
-        background-color: rgba(17, 18, 19, 0.5);
+        background-color: rgba(205, 228, 252, 0.5);
       }
 
       td {
@@ -63,3 +63,33 @@
     }
   }
 }
+
+
+.tabs-header {
+  display: flex;
+  border-bottom: 1px solid #e5e7eb;
+  background-color: #fff;
+}
+
+.tab {
+  
+  padding: 12px 20px;
+  cursor: pointer;
+  color: #4b5563;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease;
+
+  &:hover {
+    border-color: #2563eb;
+  }
+
+  &.active {
+    color: #2563eb;
+    border-color: #2563eb;
+  }
+}
+
+.tabs-body {
+  padding: 20px;
+}
+
