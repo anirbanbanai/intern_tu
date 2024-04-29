@@ -43,6 +43,17 @@
   align-items: center;
 }
 
+.becolor {
+  padding: 1rem;
+  background-color: #fff;
+  h4 {
+    margin-left: 1rem;
+  }
+  p {
+    margin-left: 1rem;
+  }
+}
+
 @media (min-width: 540px) {
   .grid {
     grid-template-columns: repeat(1, minmax(0, 1fr));

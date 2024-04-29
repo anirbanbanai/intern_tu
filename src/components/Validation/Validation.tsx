@@ -14,7 +14,8 @@ const Validation = () => {
   return (
     <div>
       <h2 className="validation-text">Validation</h2>
-      <div className="flexvalidate">
+
+      <div className="flexvalidate becolor">
         <div>
           <h3>Bootstrap validation normal</h3>
           

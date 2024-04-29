@@ -6,7 +6,7 @@ import TableWithSearchButton from "./Table";
 
 const AdvanceTable = () => {
   return (
-    <div>
+    <div className="becolor">
       <h2>Search</h2>
       <p>A table allowing search</p>
 

@@ -13,11 +13,12 @@ const BesicElement = () => {
   return (
     <div>
       <h2>Besic Element</h2>
+      <div className="becolor">
+        
       <div className=" input-groupBasic">
         <h4>Input types</h4>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque omnis
-          aliquam, praesentium eius laborum quia.
+         Most common form controll,text based input fields.Inclued support all html5 types.
         </p>
       </div>
 
@@ -152,6 +153,7 @@ const BesicElement = () => {
           </div>
         </button>
       </form>
+      </div>
       
     </div>
   );

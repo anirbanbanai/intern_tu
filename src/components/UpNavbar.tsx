@@ -7,7 +7,7 @@ import { SlSettings } from "react-icons/sl";
 
 const UpNavbar = () => {
   return (
-    <div className="flex ">
+    <div className="flex upnav2">
       <div className="flex1">
         <AiOutlineMenuUnfold />
         <h3>Create new</h3>
