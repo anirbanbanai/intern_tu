@@ -1,0 +1,42 @@
+@import "./table/table.scss";
+@import "./besicElement/basicElement.scss";
+@import "./button.scss";
+
+$bgcolor: #ecf0f1;
+
+.text-red{
+  color: red;
+}
+.text-green{
+  color: green;
+}
+
+* {
+  background-color: $bgcolor;
+}
+
+.tabs-header {
+  display: flex;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.tab {
+  padding: 12px 20px;
+  cursor: pointer;
+  color: #4b5563;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease;
+
+  &:hover {
+    border-color: #2563eb;
+  }
+
+  &.active {
+    color: #2563eb;
+    border-color: #2563eb;
+  }
+}
+
+.tabs-body {
+  padding: 20px;
+}
