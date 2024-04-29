@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import BesicElement from "./basicElement/BesicElement";
-import Validation from "./Validation";
+import Validation from "./Validation/Validation";
 import { data } from "./data/data";
-import AdvanceTable from "./AdvanceTable";
+import AdvanceTable from "./table/AdvanceTable";
 
 function TabExample() {
   const [activeTab, setActiveTab] = useState("at");

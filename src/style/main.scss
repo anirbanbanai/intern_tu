@@ -1,6 +1,8 @@
 @import "./table/table.scss";
 @import "./besicElement/basicElement.scss";
 @import "./button.scss";
+@import "./inputs.scss";
+@import "./validation/validation.scss";
 
 $bgcolor: #ecf0f1;
 
@@ -40,3 +42,4 @@ $bgcolor: #ecf0f1;
 .tabs-body {
   padding: 20px;
 }
+

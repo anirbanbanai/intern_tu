@@ -1,0 +1,11 @@
+.flexvalidate{
+    display: grid;
+    // justify-content: center;
+}
+
+@media (min-width: 540px) {
+    .flexvalidate{
+        display: flex;
+        justify-content: center;
+    }
+}

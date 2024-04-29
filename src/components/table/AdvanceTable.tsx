@@ -1,5 +1,5 @@
 import React from "react";
-import TableWithStripedRows from "./table/Table";
+import TableWithStripedRows from "./Table";
 
 const AdvanceTable = () => {
   return (
@@ -9,8 +9,12 @@ const AdvanceTable = () => {
 
       <div>
         <div className="input-groupsearch">
-          <label className="user-label">Search</label>
-          <input className="inputSearch" type="text" placeholder="60 recors..." />
+          <label className="user-label">Search :</label>
+          <input
+            className="input"
+            type="text"
+            placeholder="60 recors..."
+          />
         </div>
       </div>
       <TableWithStripedRows />
