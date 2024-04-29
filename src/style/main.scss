@@ -3,13 +3,10 @@
 @import "./button.scss";
 @import "./inputs.scss";
 @import "./validation/validation.scss";
+@import "./pagination.scss";
 
 $bgcolor: #ecf0f1;
 
-// * {
-//   background-color: $bgcolor;
-//   margin: 2px;
-// }
 
 .text-red{
   color: red;

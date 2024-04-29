@@ -1,5 +1,6 @@
 import React from "react";
 import TableWithStripedRows from "./Table";
+import TableWithSearchButton from "./Table";
 
 const AdvanceTable = () => {
   return (
@@ -7,17 +8,8 @@ const AdvanceTable = () => {
       <h2>Search</h2>
       <p>A table allowing search</p>
 
-      <div>
-        <div className="input-groupsearch">
-          <label className="user-label">Search :</label>
-          <input
-            className="input"
-            type="text"
-            placeholder="60 recors..."
-          />
-        </div>
-      </div>
-      <TableWithStripedRows />
+     
+      <TableWithSearchButton/>
     </div>
   );
 };
