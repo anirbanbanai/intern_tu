@@ -97,3 +97,10 @@
   align-items: center;
   gap: 0.5rem;
 }
+.flex2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // flex-direction: row;
+  gap: 0.5rem;
+}

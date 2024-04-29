@@ -7,11 +7,13 @@ import { SlSettings } from "react-icons/sl";
 
 const UpNavbar = () => {
   return (
-    <div className="flex upnav2">
+    <div className="flex ">
+
       <div className="flex1">
         <AiOutlineMenuUnfold />
         <h3>Create new</h3>
       </div>
+
       <div className="flex1">
         <div>
           <input type="text" placeholder="Search..." className="input" />

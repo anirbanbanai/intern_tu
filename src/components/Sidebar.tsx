@@ -16,6 +16,7 @@ import { ChevronRightIcon, ChevronDownIcon, FolderIcon } from "@heroicons/react/
 import { BsUiChecks } from "react-icons/bs";
 import { ArrowLeftEndOnRectangleIcon } from "@heroicons/react/20/solid";
 import { GiCondyluraSkull } from "react-icons/gi";
+import { CgEnter } from "react-icons/cg";
 
 
 function SidebarWithContentSeparator() {
@@ -30,7 +31,7 @@ function SidebarWithContentSeparator() {
   };
   return (
     <div className="sidebar">
-      <div className="sidebar-header">
+      <div className="sidebar-header ">
         <h1 className=""><GiCondyluraSkull className=""/>  <span className="smVanish">SHREYU</span></h1>
       </div>
 
@@ -97,7 +98,7 @@ function SidebarWithContentSeparator() {
             <div className={`tab2 ${activeTab === "at" ? "active" : ""} `}
             onClick={() => handleTabClick("at")}>
               <span className="">
-                <ArrowLeftEndOnRectangleIcon className="icon" />
+                <CgEnter className="icon" />
               </span>
               <span className="smVanish">Validate</span>
             </div>
