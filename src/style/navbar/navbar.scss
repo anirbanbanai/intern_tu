@@ -1,6 +1,8 @@
 .sidebar {
-    height: calc(100vh - 2rem);
-    width: 100%;
+    height: 100vh;
+    // width: 100px;
+    position: fixed;
+    z-index: 50;
     padding: 1rem;
     box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.05), 0px 9px 46px rgba(0, 0, 0, 0.07);
     background-color: #ffffff;
@@ -8,6 +10,11 @@
     .sidebar-header {
       margin-bottom: 1rem;
       padding: 1rem;
+      h1{
+        font-size: 35px;
+        font-weight: 800;
+        color: blue;
+      }
     }
   
     .sidebar-list {
@@ -64,3 +71,18 @@
     }
   }
   
+
+  .upnav{
+    background-color: #ECF0F1;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+
+  @media (max-width:570px) {
+    .sidebar{
+        width: 80px;
+    }
+    h3{
+        font-size: 15px;
+    }
+  }

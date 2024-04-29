@@ -5,6 +5,7 @@ import "@/style/main.scss";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import SidebarWithContentSeparator from "@/components/Sidebar";
+import UpNavbar from "@/components/UpNavbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,8 +27,8 @@ export default function RootLayout({
         <SidebarWithContentSeparator/>
        </div>
 
-        <div className="col-span-4">
-          <h1>Navbar 3</h1>
+        <div className="col-span-4 upnav">
+        <UpNavbar/>
           {children}
           </div>
       </body>

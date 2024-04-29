@@ -7,9 +7,17 @@
     text-align: center;
 }
 
-@media (min-width: 540px) {
-    .flexvalidate{
-        display: flex;
-        justify-content: center;
+@media (min-width: 840px) {
+    .flexvalidate {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+
+@media (max-width:540px) {
+    .smVanish{
+        // display: hidden;
+        visibility: hidden;
     }
 }

@@ -34,6 +34,7 @@ $bgcolor: #ecf0f1;
   grid-column: span 4;
   width: 100%;
   margin-left: 3rem;
+  z-index: 30;
 }
 
 
@@ -46,4 +47,23 @@ $bgcolor: #ecf0f1;
 
 .left-2{
   padding-left: 2rem;
+}
+
+.activeLink{
+  color: red;
+}
+
+.tab2 {
+  text-decoration: none;
+  // padding: 12px 20px;
+  cursor: pointer;
+  color: #4b5563;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease;
+
+  
+
+  &.active {
+    color: red;
+  }
 }
